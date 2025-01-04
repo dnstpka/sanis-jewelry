@@ -1,0 +1,15 @@
+export const MENU = [
+  { title: 'Серьги', link: '/' },
+  { title: 'Кольца', link: '/' },
+  { title: 'Браслеты', link: '/' },
+  { title: 'Подвески', link: '/' },
+  { title: 'Колье', link: '/' },
+  { title: 'Пирсинг', link: '/' },
+  { title: 'Броши', link: '/' },
+  { title: 'Запонки', link: '/' },
+  { title: 'Изделия с деревом', link: '/' },
+  { title: 'Религиозные', link: '/' },
+  { title: 'Подарки', link: '/' },
+  { title: 'Коллекции', link: '/' },
+  { title: 'Прочие', link: '/' },
+];

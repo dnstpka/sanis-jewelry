@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Header } from '@/components';
+
 import './globals.scss';
 
 export const metadata: Metadata = {
@@ -12,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
