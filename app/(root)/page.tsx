@@ -21,12 +21,12 @@ export default function Home() {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
-          // loop
+          loop
           speed={1000}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           navigation={{
             prevEl: `.${styles.heroPrev}`,
             nextEl: `.${styles.heroNext}`,
