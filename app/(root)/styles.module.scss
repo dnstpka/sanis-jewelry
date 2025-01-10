@@ -1,0 +1,165 @@
+@use '../../styles/variables.scss' as *;
+
+.hero {
+  padding-top: 194px;
+}
+
+.heroSlide {
+  position: relative;
+}
+
+.heroImage {
+  height: 800px;
+  object-fit: cover;
+}
+
+.heroInfo {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 160px;
+  transform: translateY(-50%);
+
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 120%;
+  color: $blackColor;
+  max-width: 535px;
+}
+
+.heroBtn {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 200%;
+  padding: 11px 36px;
+  margin-top: 35px;
+  letter-spacing: 0.1em;
+  color: $whiteColor;
+  background-color: $blackColor;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $accentColor;
+    color: $blackColor;
+  }
+}
+
+.heroNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.heroPrev {
+  position: absolute;
+  left: 50px;
+}
+
+.heroNext {
+  position: absolute;
+  right: 50px;
+}
+
+.heroNextImg {
+  transform: rotate(180deg);
+}
+
+.heroPagination {
+  position: absolute;
+  bottom: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 11px;
+  z-index: 10;
+  height: 2px;
+}
+
+.heroBullet,
+.heroActiveBullet {
+  width: 115px;
+  height: 2px;
+  background: $whiteColor;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.heroActiveBullet {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 114px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 90px;
+  }
+
+  .heroImage {
+    height: 600px;
+  }
+
+  .heroInfo {
+    color: $whiteColor;
+    top: initial;
+    right: initial;
+    transform: translateY(0);
+
+    bottom: 68px;
+    left: 20px;
+  }
+
+  .heroBtn {
+    border: 2px solid $whiteColor;
+    background-color: transparent;
+
+    &:active,
+    &:focus {
+      border: 2px solid $accentColor;
+      background-color: $accentColor;
+      color: $whiteColor;
+    }
+  }
+
+  .heroNav {
+    display: none;
+  }
+
+  .heroBullet,
+  .heroActiveBullet {
+    width: 75px;
+  }
+}
+
+@media (max-width: 540px) {
+  .heroImage {
+    height: 570px;
+  }
+
+  .heroInfo {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroInfo {
+    font-size: 28px;
+  }
+
+  .heroBtn {
+    max-width: 95%;
+    width: 100%;
+  }
+}
