@@ -9,12 +9,12 @@ import { SecondaryContainer } from '../secondary-container';
 import { NAV } from '@/constants/nav';
 import { MENU } from '@/constants/menu';
 
-import Logo from '@/images/logo.svg';
-import UserIcon from '@/images/icons/user.svg';
-import SearchIcon from '@/images/icons/search.svg';
-import CartIcon from '@/images/icons/cart.svg';
-import BurgerMenuIcon from '@/images/icons/burger-menu.svg';
-import CloseIcon from '@/images/icons/close.svg';
+import Logo from '@/public/images/logo.svg';
+import UserIcon from '@/public/images/icons/user.svg';
+import SearchIcon from '@/public/images/icons/search.svg';
+import CartIcon from '@/public/images/icons/cart.svg';
+import BurgerMenuIcon from '@/public/images/icons/burger-menu.svg';
+import CloseIcon from '@/public/images/icons/close.svg';
 import styles from './styles.module.scss';
 
 export const Header: React.FC = () => {

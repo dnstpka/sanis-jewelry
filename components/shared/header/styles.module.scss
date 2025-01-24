@@ -4,8 +4,8 @@
   position: fixed;
   left: 0;
   right: 0;
-  padding-bottom: 13px;
   z-index: 10;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .top {
@@ -59,6 +59,8 @@
 
 .bottom {
   padding-top: 20px;
+  background-color: $whiteColor;
+  padding-bottom: 13px;
 }
 
 .innerBottom {
@@ -121,7 +123,6 @@
 
 @media (max-width: 992px) {
   .header {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     background-color: $whiteColor;
   }
 
