@@ -2,18 +2,18 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { Partners } from '@/components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import Image01 from '@/images/hero/01.png';
-import Image02 from '@/images/hero/02.png';
-import ArrowIcon from '@/images/icons/carousel-arrow.svg';
+import Image01 from '@/public/images/hero/01.png';
+import Image02 from '@/public/images/hero/02.png';
+import ArrowIcon from '@/public/images/icons/carousel-arrow.svg';
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import styles from './styles.module.scss';
-import { Partners } from '@/components';
 
 export default function Home() {
   return (
