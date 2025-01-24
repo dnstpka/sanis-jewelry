@@ -13,6 +13,7 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import styles from './styles.module.scss';
+import { Partners } from '@/components';
 
 export default function Home() {
   return (
@@ -64,6 +65,7 @@ export default function Home() {
           <div className={styles.heroPagination}></div>
         </Swiper>
       </section>
+      <Partners />
     </>
   );
 }
